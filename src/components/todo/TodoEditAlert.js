@@ -10,6 +10,12 @@ export function TodoEditAlert(i,item){
         inputValidator:(value)=> {
             if(value){
                 store.dispatch(EditTodo({index:i,task:value}))
+
+                Swal.fire(
+                    'Edited!',
+                    'Your task has been edited.',
+                    'success'
+                )
             }
         }
     })

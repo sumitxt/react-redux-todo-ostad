@@ -10,8 +10,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      {/*<Provider store={Store}>*/}
+      <Provider store={Store}>
           <App></App>
-      {/*</Provider>*/}
+      </Provider>
   </React.StrictMode>
 );

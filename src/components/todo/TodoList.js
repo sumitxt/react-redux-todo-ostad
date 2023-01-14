@@ -5,7 +5,7 @@ import {TodoEditAlert} from "./TodoEditAlert";
 
 const TodoList = () => {
 
-    const todoItems=useSelector((state)=>state.todo.value)
+    const todoItems = useSelector((state) => state.todo.value)
 
     return (
         <div className="container-fluid">
@@ -22,13 +22,23 @@ const TodoList = () => {
                         </thead>
                         <tbody>
 
-                        {todoItems.map((item,i)=>{
-                            return(
+                        {todoItems.map((item, i) => {
+                            return (
                                 <tr key={i.toString()}>
                                     <td>{i}</td>
                                     <td>{item}</td>
-                                    <td><button onClick={()=>{TodoEditAlert(i,item)}} className="btn btn-warning">Edit</button></td>
-                                    <td><button onClick={()=>{TodoDeleteAlert(i)}} className="btn btn-danger">Remove</button></td>
+                                    <td>
+                                        <button onClick={() => {
+                                            TodoEditAlert(i, item)
+                                        }} className="btn btn-warning">Edit
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button onClick={() => {
+                                            TodoDeleteAlert(i)
+                                        }} className="btn btn-danger">Remove
+                                        </button>
+                                    </td>
                                 </tr>
                             )
                         })}

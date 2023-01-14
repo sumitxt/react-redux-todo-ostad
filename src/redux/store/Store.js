@@ -3,7 +3,7 @@ import todoReducer from '../state/todo/todoSlice'
 
 export default configureStore({
 
-    reducer:{
-        todo:todoReducer
+    reducer: {
+        todo: todoReducer
     }
 })

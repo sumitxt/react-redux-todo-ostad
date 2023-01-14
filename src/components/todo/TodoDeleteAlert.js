@@ -2,7 +2,7 @@ import Swal from "sweetalert2";
 import {RemoveTodo} from "../../redux/state/todo/todoSlice";
 import store from "../../redux/store/Store";
 
-export function TodoDeleteAlert(i){
+export function TodoDeleteAlert(i) {
     Swal.fire({
         title: 'Are you sure?',
         text: "You won't be able to revert this!",

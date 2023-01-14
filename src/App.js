@@ -2,11 +2,11 @@ import React from 'react';
 import TodoPage from "./pages/TodoPage";
 
 const App = () => {
-  return (
-      <div>
-        <TodoPage></TodoPage>
-      </div>
-  );
+    return (
+        <div>
+            <TodoPage></TodoPage>
+        </div>
+    );
 };
 
 export default App;

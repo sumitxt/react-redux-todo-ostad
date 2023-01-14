@@ -4,17 +4,20 @@ import {AddTodo} from "../../redux/state/todo/todoSlice";
 
 const CreateTodo = () => {
 
-    const dispatch=useDispatch();
-    const taskInput=useRef()
+    const dispatch = useDispatch();
+    const taskInput = useRef()
 
     return (
         <div className="container-fluid">
             <div className="row">
                 <div className="col-md-10">
-                    <input ref={taskInput} placeholder="Task Name" type="text" className="form-control bg-dark text-white" />
+                    <input ref={taskInput} placeholder="Task Name" type="text"
+                           className="form-control bg-dark text-white"/>
                 </div>
                 <div className="col-md-2">
-                    <button onClick={()=>dispatch(AddTodo(taskInput.current.value))} className="btn btn-primary">Add to To Do</button>
+                    <button onClick={() => dispatch(AddTodo(taskInput.current.value))} className="btn btn-primary">Add
+                        to To Do
+                    </button>
                 </div>
             </div>
         </div>

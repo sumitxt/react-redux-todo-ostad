@@ -17,6 +17,12 @@ const CreateTodo = () => {
         }
         else{
             dispatch(AddTodo(taskInput.current.value))
+            Swal.fire({
+                icon: 'success',
+                title: 'Your todo has been added',
+                showConfirmButton: false,
+                timer: 1500
+            })
         } }
     return (
         <div className="container-fluid">

@@ -33,7 +33,7 @@ const CreateTodo = () => {
                 </div>
                 <div className="col-md-2">
                     <button onClick={preventEmpty}
-                    className="btn btn-primary">Add
+                    className="btn animated-btn text-white">Add
                         to To Do
                     </button>
                 </div>

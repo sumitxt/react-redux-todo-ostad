@@ -1,6 +1,6 @@
-import Swal from "sweetalert2";
 import {RemoveTodo} from "../../redux/state/todo/todoSlice";
 import store from "../../redux/store/Store";
+import Swal from "sweetalert2";
 
 export function TodoDeleteAlert(i) {
     Swal.fire({
